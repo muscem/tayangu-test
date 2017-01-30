@@ -31,7 +31,7 @@ function user_control(){
 	
 	$.ajax({
 		async: false,		
-		type: "GET",
+		type: "POST",
 		crossDomain: true,
 		url: siteUrlAdress+"/xmls/xml_login_control.php",
 		timeout: 260000,
@@ -39,7 +39,7 @@ function user_control(){
 				p:"123456",
 				s:"user_login_control"
 			},
-		dataType: "xml"
+		dataType: "jsonp"
 	})
 	.done(function(r){
 		var uc = $(r).find('result').text();
