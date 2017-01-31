@@ -35,7 +35,7 @@ function user_control(){
 		async: false,		
 		type: "POST",
 		crossDomain: true,
-		url: siteUrlAdress+"/xmls/xml_login_control.php",
+		url: siteUrlAdress+"/xmls/xml_control.php",
 		timeout: 260000,
 		data: {un:"mci",
 				p:"123456",
