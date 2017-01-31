@@ -20,7 +20,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //
 function onDeviceReady() {
 	// Now safe to use the PhoneGap API
-	alert("Device is ready");
+	//alert("Device is ready");
 	$.support.cors=true;
 	//$.mobile.allowCrossDomainPages = true;
     //$.mobile.pushStateEnabled = false;
