@@ -39,7 +39,8 @@ function user_control(){
 		timeout: 260000,
 		data: {un:"mci",
 				p:"123456",
-				s:"user_login_control"
+				s:"user_login_control",
+				uuid:device.uuid
 			},
 		dataType: "xml"
 	})
