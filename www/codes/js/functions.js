@@ -42,7 +42,7 @@ function user_control(){
 				s:"user_login_control"
 				//uuid:device.uuid
 			},
-		dataType: "xml"
+		dataType: "text"
 	})
 	.done(function(r){
 		var uc = $(r).find('result').text();
