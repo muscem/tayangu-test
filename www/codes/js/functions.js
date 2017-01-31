@@ -12,7 +12,7 @@
  */
 
 
-var siteUrlAdress="http://www.tayangu.com.tr/anel";
+//var siteUrlAdress="http://www.tayangu.com.tr/anel";
 
 document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -20,10 +20,10 @@ document.addEventListener("deviceready", onDeviceReady, false);
 //
 function onDeviceReady() {
 	// Now safe to use the PhoneGap API
-	//alert("Device is ready");
+	alert("Device is ready");
 	$.support.cors=true;
 	$.mobile.allowCrossDomainPages = true;
-    //$.mobile.pushStateEnabled = false;
+    $.mobile.pushStateEnabled = false;
 }
 
 
@@ -35,7 +35,7 @@ function user_control(){
 		async: false,		
 		type: "POST",
 		crossDomain: true,
-		url: siteUrlAdress+"/xmls/xml_control.php",
+		url: "http://www.tayangu.com.tr/anel/xmls/xml_control.php",
 		timeout: 260000,
 		data: {un:"mci",
 				p:"123456",
